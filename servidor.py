@@ -30,14 +30,14 @@ class CORSHandler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, format, *args):
         pass  # silenciar logs
 
-print(f"╔══════════════════════════════════════════╗")
-print(f"║   🎓 Dashboard Demo Day UBA              ║")
-print(f"║   Servidor corriendo en puerto {PORT}      ║")
-print(f"╚══════════════════════════════════════════╝")
-print(f"")
-print(f"  → Abriendo http://localhost:{PORT}/index.html")
-print(f"  → Ctrl+C para detener")
-print(f"")
+print("+------------------------------------------+")
+print(f"|    Dashboard Demo Day UBA                |")
+print(f"|    Servidor corriendo en puerto {PORT}      |")
+print("+------------------------------------------+")
+print("")
+print(f"  -> Abriendo http://localhost:{PORT}/index.html")
+print(f"  -> Ctrl+C para detener")
+print("")
 
 with socketserver.TCPServer(("", PORT), CORSHandler) as httpd:
     webbrowser.open(f"http://localhost:{PORT}/index.html")
