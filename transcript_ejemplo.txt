@@ -1,0 +1,127 @@
+TRANSCRIPT - DEMO DAY UBA MBA
+Fecha: 26 de mayo de 2026
+Evento: Presentación de Proyectos Finales — Posgrado en Gestión de Empresas y Tecnología
+
+Moderador: Axel Laban Arzubi
+Duración total: ~90 minutos
+Grupos presentando: A, B, C, D, E
+
+---
+
+[00:02:00] INICIO DEL EVENTO
+
+Axel: Buenas noches a todos. Bienvenidos al Demo Day de la UBA. Hoy vamos a ver cinco proyectos increíbles que combinan inteligencia artificial con modelos de negocio reales. El orden de presentación va a ser de A a E. Cada grupo tiene 10 minutos para presentar y 5 de preguntas. Arrancamos.
+
+---
+
+[00:05:00] PRESENTACIÓN — GRUPO A
+Nombre del proyecto: "MediCheck"
+
+Integrante 1 (Lucía Torres): Hola, somos el Grupo A y nuestro proyecto se llama MediCheck. El problema que identificamos es que en Argentina, más del 60% de los errores médicos en guardias hospitalarias ocurren por falta de información rápida sobre interacciones medicamentosas. Los médicos de guardia no tienen tiempo de revisar fichas técnicas en papel.
+
+Integrante 2 (Marcos Díaz): Nuestra solución es un asistente de IA embebido en el sistema de gestión hospitalaria que, en tiempo real, alerta sobre interacciones peligrosas entre medicamentos cuando el médico hace una prescripción. Usamos un modelo de lenguaje fine-tuneado con literatura médica local y el vademécum argentino.
+
+Integrante 1: El prototipo ya está funcionando en una guardia del Hospital Italiano en modo piloto. Tenemos integración con HIS (Hospital Information System) via API REST. El modelo detecta el 94% de las interacciones conocidas con un tiempo de respuesta bajo los 800ms.
+
+Integrante 3 (Diego Fernández): El modelo de negocio es B2B SaaS. Cobramos por cama habilitada, con un fee mensual de USD 12 por cama. Un hospital mediano de 200 camas paga USD 2.400/mes. El mercado target inicial es AMBA con 48 hospitales privados de más de 150 camas. TAM estimado: USD 8.6M anuales solo en Argentina.
+
+Integrante 2: El equipo somos tres: Lucía con background en biotecnología y UX de sistemas médicos, Marcos con 6 años en desarrollo de software y NLP, y Diego ex-gerente de operaciones en una clínica privada. Tenemos el conocimiento del dominio y la ejecución técnica cubiertos.
+
+Integrante 1: El análisis de riesgos que hicimos contempla tres escenarios de fallo: regulatorio (ANMAT), adopción institucional lenta, y falsas alarmas que generen fricción con los médicos. Para cada uno tenemos un plan de mitigación. El mayor riesgo es la resistencia cultural del cuerpo médico, que ya estamos trabajando con el jefe de guardia del Italiano.
+
+Axel: Excelente presentación. ¿Cómo manejan la responsabilidad legal si el sistema falla una alerta?
+
+Integrante 3: Muy buena pregunta. El sistema funciona como segunda opinión, no reemplaza el criterio médico. Tenemos un disclaimer legal en cada alerta y el médico siempre confirma antes de prescribir. Estamos trabajando con un estudio jurídico especializado en healthtech.
+
+---
+
+[00:22:00] PRESENTACIÓN — GRUPO B
+Nombre del proyecto: "AgriSense"
+
+Integrante 1 (Valentina Ríos): Somos el Grupo B, proyecto AgriSense. El problema: los pequeños y medianos productores agropecuarios del NOA pierden en promedio el 23% de su cosecha por decisiones tardías de riego y fumigación. No tienen acceso a información agronómica precisa y en tiempo real como sí la tienen las grandes compañías.
+
+Integrante 2 (Hernán Castro): La solución es una plataforma de IA que combina datos satelitales (Sentinel-2), sensores IoT de bajo costo en campo, y modelos predictivos de estrés hídrico y plagas. El productor recibe alertas en WhatsApp con recomendaciones concretas: "Regar lote 3 mañana antes de las 10am, hay déficit hídrico proyectado para 72hs."
+
+Integrante 1: El prototipo está corriendo con datos reales de tres productores en Tucumán. Estamos usando computer vision para detectar anomalías en imágenes satelitales y un modelo de regresión para predicción de rendimiento. El costo del hardware por lote es de USD 180 (sensor + gateway LoRa).
+
+Integrante 3 (Camila Paz): Modelo de negocio: freemium con datos satelitales gratis y suscripción premium de USD 45/mes por lote para incluir los sensores físicos y el modelo predictivo avanzado. Tenemos tres productores pagando en beta. El canal principal es las cooperativas agropecuarias. En Tucumán sola hay 12 cooperativas con más de 800 productores asociados.
+
+Integrante 2: El equipo tiene 4 integrantes. Valentina es ingeniera agrónoma con maestría en teledetección. Hernán soy desarrollador con experiencia en IoT y sistemas embebidos. Camila viene de consultoría estratégica en agronegocios. Y Federico (que hoy no pudo estar) es el experto en modelos de machine learning, tiene papers publicados en predicción climática.
+
+Integrante 1: Los riesgos principales son conectividad en zonas rurales (mitigado con procesamiento offline en el gateway), costo de adquisición de clientes (trabajamos con cooperativas como canal), y competencia de players internacionales tipo Climate Corporation. Nuestro diferencial es el precio y la adaptación al contexto argentino.
+
+Axel: ¿Cómo escalan la operación si tienen éxito en Tucumán?
+
+Integrante 3: El modelo es replicable por provincia. La calibración del modelo agronómico tarda 2 semanas por zona climática. Después es copy-paste operativo. El plan es Tucumán en 2026, Córdoba y Santa Fe en 2027, y exportar el modelo a Bolivia y Paraguay en 2028.
+
+---
+
+[00:40:00] PRESENTACIÓN — GRUPO C
+Nombre del proyecto: "TutorIA"
+
+Integrante 1 (Pablo Moreno): Buenas noches, somos el Grupo C con TutorIA. El problema que atacamos es la brecha de aprendizaje en matemáticas y ciencias en escuelas secundarias públicas argentinas. El 67% de los alumnos de 5to y 6to año no alcanza el nivel mínimo en matemáticas según las pruebas Aprender. Los docentes están desbordados y no tienen tiempo para atención personalizada.
+
+Integrante 2 (Sofía Ramírez): TutorIA es un tutor de IA conversacional que se adapta al nivel y ritmo de cada alumno. No da las respuestas — guía con preguntas socráticas hasta que el alumno llega a la solución. Está integrado en una app mobile y web, sin necesidad de cuenta (para salvar la barrera de identidad digital en menores de edad).
+
+Integrante 1: El prototipo tiene 340 alumnos activos en tres colegios de La Matanza. Los datos muestran que alumnos que usan TutorIA 3 veces por semana mejoran su nota promedio en matemáticas un 18% en 6 semanas. El modelo base es un LLM al que le pusimos un sistema de prompts que lo fuerza a nunca dar la respuesta directa.
+
+Integrante 3 (Natalia Vega): El modelo de negocio es B2B2C: vendemos licencias al Ministerio de Educación o a las provincias, no a los alumnos. El precio es USD 3 por alumno por mes. La provincia de Buenos Aires sola tiene 1.2M de alumnos en secundaria. El deal potencial con PBA es de USD 3.6M/mes. Ya tenemos reunión agendada con la Dirección General de Cultura y Educación.
+
+Integrante 2: El equipo: Pablo es docente de matemáticas con 8 años de experiencia y hoy hace el pasaje a edtech. Sofía (yo) soy UX designer especializada en productos para adolescentes. Natalia viene del sector público, trabajó en el Ministerio de Educación Nacional, conoce el proceso de compra gubernamental.
+
+Integrante 1: El pre-mortem más importante que hicimos: ¿qué pasa si el Ministerio no compra? Nuestra hipótesis de riesgo es que los ciclos de compra pública son lentos (12-18 meses). Mitigación: monetizar en paralelo con colegios privados a USD 8/alumno mientras esperamos el deal público. Hoy ya tenemos 2 colegios privados interesados en pagar.
+
+Axel: El tutor socrático es un enfoque muy interesante. ¿Cómo manejan cuando el alumno se frustra?
+
+Integrante 2: Detectamos señales de frustración (respuestas muy cortas, inactividad, uso de mayúsculas) y el tutor cambia de modo: simplifica la pregunta, valida el esfuerzo, y en casos extremos muestra un ejemplo resuelto parcialmente. Tenemos un sistema de detección de estado emocional básico.
+
+---
+
+[01:00:00] PRESENTACIÓN — GRUPO D
+Nombre del proyecto: "LegalBot"
+
+Integrante 1 (Rodrigo Salas): Somos el Grupo D con LegalBot. El problema: el 78% de los argentinos que tienen un conflicto legal menor (laboral, de consumo, inquilinato) no accede a asesoramiento jurídico por el costo. Un consulta con un abogado en CABA cuesta entre $15.000 y $50.000 ARS. La consecuencia es que renuncian a sus derechos.
+
+Integrante 2 (Marina Gómez): LegalBot es un asistente legal de IA para ciudadanos. En 5 minutos el usuario describe su problema en lenguaje natural, el sistema lo clasifica, explica sus derechos, genera un documento inicial (carta documento, mediación, reclamo ante OMIC) y conecta con un abogado de nuestra red si el caso necesita representación.
+
+Integrante 1: El prototipo funciona para 3 tipos de conflictos: laboral, consumidor, e inquilinato. Procesamos más de 200 consultas en el piloto. El modelo fue evaluado por 5 abogados que calificaron la calidad del análisis legal en 7.8/10 promedio. La app está en React Native, el LLM es Claude 3.5 con RAG sobre el Código Civil y legislación laboral actualizada.
+
+Integrante 3 (Tomás Herrera): Modelo de negocio freemium: el análisis inicial y el documento básico son gratis. Los documentos avanzados y la conexión con abogado cuestan USD 15 por caso. Los abogados de la red pagan una comisión del 20% sobre los honorarios cuando consiguen cliente vía plataforma. El diferencial es que los abogados reciben leads calificados con el caso ya analizado.
+
+Integrante 2: El equipo: Rodrigo es abogado recibido con experiencia en derecho laboral. Marina soy desarrolladora full-stack, especialidad en mobile. Tomás viene de growth en una fintech, entiende adquisición de usuarios masiva. Tenemos el trío legal + tech + growth.
+
+Integrante 1: Pre-mortem: el riesgo más grande es responsabilidad legal si el bot da un consejo equivocado. Mitigación: toda la comunicación es "esto es información, no asesoramiento jurídico". Los documentos los genera el bot pero los revisa un abogado de la red antes de enviarse. El abogado cobra USD 5 por revisión. Esto crea el incentivo para que la red legal cuide la calidad.
+
+Axel: ¿Cómo piensan expandirse fuera de Argentina con diferentes marcos legales?
+
+Integrante 3: La arquitectura está diseñada para eso. El núcleo de IA es genérico, el RAG es el componente que cambia por país. Tenemos documentado el proceso de "onboarding de jurisdicción": carga del corpus legal local, fine-tuning de 2 semanas, validación por abogados locales. Chile y Colombia son los primeros targets por similitud de sistemas legales.
+
+---
+
+[01:18:00] PRESENTACIÓN — GRUPO E
+Nombre del proyecto: "FinCoach"
+
+Integrante 1 (Andrés Blanco): Hola, somos el Grupo E con FinCoach. El problema es que el 71% de los millennials y Gen Z en Argentina no tiene ningún hábito de ahorro y no entiende cómo funcionan los instrumentos financieros básicos. La educación financiera en el país es mínima y la inflación hace que el que no invierte pierde.
+
+Integrante 2 (Jimena López): FinCoach es un coach financiero personal con IA que se conecta a las cuentas bancarias del usuario (vía Open Banking), analiza sus gastos, identifica patrones, y da recomendaciones personalizadas en lenguaje simple: "Gastás 34% de tu sueldo en delivery, acá hay USD 80/mes que podés redirigir a un FCI en pesos". También enseña conceptos: si el usuario pregunta qué es un FCI, le explica con ejemplos propios.
+
+Integrante 1: El prototipo está en beta con 85 usuarios activos. La conexión bancaria usa la API de Belvo (Open Banking para LATAM). Los usuarios que siguen las recomendaciones por 60 días aumentan su tasa de ahorro un 22% en promedio según nuestra medición. El modelo de IA es GPT-4o con function calling para consultar el saldo y movimientos en tiempo real durante la conversación.
+
+Integrante 3 (Luciana Reyes): Modelo de negocio: suscripción USD 9.99/mes o USD 89/año. En el free tier el usuario ve el análisis de gastos pero no recibe recomendaciones ni puede preguntar. Monetización secundaria: comisiones de los productos financieros que recomendamos (FCI, CEDEARs, seguros). Estimamos un ARPU de USD 14/usuario/mes combinando suscripción + comisiones.
+
+Integrante 2: El equipo: Andrés es economista con experiencia en banca privada, entiende los productos financieros que recomendamos. Jimena (yo) soy product manager con 5 años en fintechs. Luciana viene de growth hacking en una startup de medios. El riesgo de ejecución más bajo del Demo Day, en serio.
+
+Integrante 1: El pre-mortem que más nos quita el sueño: regulación del BCRA sobre Open Banking. Si el BCRA cambia las reglas de conexión bancaria, quedamos sin el core del producto. Mitigación: mantener una opción de carga manual de extractos como fallback, y tener presencia activa en las mesas de diálogo del BCRA sobre Open Banking donde Belvo ya participa.
+
+Axel: El ARPU de USD 14 parece optimista combinando suscripción y comisiones. ¿Tienen datos de conversión a los productos recomendados?
+
+Integrante 3: En el beta, el 12% de los usuarios que reciben una recomendación de FCI hacen clic y el 4% termina suscribiéndose. A USD 50 de comisión promedio por suscripción a un FCI, con 1.000 usuarios activos eso son USD 2.000/mes solo de esa vertical. El modelo es conservador en realidad.
+
+---
+
+[01:35:00] CIERRE
+
+Axel: Muy bien, terminamos las presentaciones. Felicitaciones a los cinco grupos, fueron presentaciones de muy alto nivel. Ahora pasamos a la etapa de scoring. Recuerden los criterios: Elevator Pitch, El Problema, La Solución, Prototipo de IA, Modelo de Negocio, El Equipo, y Análisis Pre-Mortem. Buena suerte a todos.
+
+---
+FIN DEL TRANSCRIPT
